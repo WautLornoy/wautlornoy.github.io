@@ -1,0 +1,10 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+# You're not supposed to be here...
+User-agent: *
+Disallow:
+
+Sitemap: {{ site.url }}/sitemap.xml
