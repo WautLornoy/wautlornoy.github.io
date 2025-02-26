@@ -6,7 +6,7 @@ url                          : "https://wautlornoy.github.io/" # the base hostna
 
 blog:
   title                      : Waut Lornoy
-  description                : This is a description.
+  description                : Yet another cyber security blog.
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file
   hero_layout                : true # turn on hero layout for blog and posts
