@@ -1,6 +1,6 @@
 ---
 layout: post
-title: THM: Steel Mountain Writeup
+title: "THM: Steel Mountain Writeup"
 description: >
   In this post I will show how I gained root privileges on a windows machine.
 tags:
@@ -8,6 +8,7 @@ tags:
   - writeup
   - tryhackme
 published: true
+hero: /uploads/posts/steelmountain/hero.png
 ---
 
 In this walkthrough on [TryHackMe](https://tryhackme.com/room/steelmountain) we will enumerate and attack a Windows machine using metasploit. 

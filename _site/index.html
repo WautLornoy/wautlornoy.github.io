@@ -64,11 +64,11 @@
 </header>
 <article class="blog">
 <style>
-  .2025-03-11-steelmountain {
+  .steelmountain {
     margin-bottom: 2em;
   }
-  .2025-03-11-steelmountain::before {
-    background-image: url('');
+  .steelmountain::before {
+    background-image: url('/uploads/posts/steelmountain/hero.png');
     background-size: cover;
     background-position: center center;
     -webkit-filter: grayscale(0.5) brightness(0.5) contrast(0.5);
@@ -79,7 +79,7 @@
     top: 0;
     z-index: -2;
   }
-  .2025-03-11-steelmountain::after {
+  .steelmountain::after {
     content:'';
     position:absolute;
     width: 100%;
@@ -92,20 +92,20 @@
     mix-blend-mode: overlay;
     z-index: -1;
   }
-  .2025-03-11-steelmountain-container,
-  .2025-03-11-steelmountain-container::before,
-  .2025-03-11-steelmountain-container::after {
+  .steelmountain-container,
+  .steelmountain-container::before,
+  .steelmountain-container::after {
     height: 25rem;
   }
-  .2025-03-11-steelmountain-bleed-container,
-  .2025-03-11-steelmountain-bleed-container::before,
-  .2025-03-11-steelmountain-bleed-container::after {
+  .steelmountain-bleed-container,
+  .steelmountain-bleed-container::before,
+  .steelmountain-bleed-container::after {
     height: 35rem;
   }
     @media (max-width: 48rem) {
-        .2025-03-11-steelmountain-container,
-        .2025-03-11-steelmountain-container::before,
-        .2025-03-11-steelmountain-container::after{
+        .steelmountain-container,
+        .steelmountain-container::before,
+        .steelmountain-container::after{
             height: 20rem;
             margin-bottom: 3rem;
         }
@@ -113,22 +113,46 @@
 </style>
  <div class="
     post-title-container
+        steelmountain steelmountain-container hero-hov
   ">
-   <div class="heading-container ">
+   <div class="heading-container hero-heading hero-heading-blog">
      <h1>
-          <a href="/posts/2025-03-11-steelmountain" title=""></a>
+          <a href="/posts/steelmountain" title="THM: Steel Mountain Writeup">THM: Steel Mountain Writeup</a>
      </h1>
      <div class="
         post-meta
       ">
         <span>11/03/2025</span>
         <span>
+              <a href="/tag/ctf">#ctf</a>
+              <a href="/tag/writeup">#writeup</a>
+              <a href="/tag/tryhackme">#tryhackme</a>
         </span>
      </div>
    </div>
  </div>
+     <p class="lead">In this walkthrough on <a href="https://tryhackme.com/room/steelmountain">TryHackMe</a> we will enumerate and attack a Windows machine using metasploit.
+<h1 id="introduction">Introduction</h1>
+<p>Our first task is to find the employee of the month, we will do an nmap scan to find all services running on the machine.
+<code class="language-plaintext highlighter-rouge">nmap -sV -sC -p- -oN steelmountain.nmap $TARGET</code>
+<img src="/uploads/posts/steelmountain/nmap.png" alt="nmap-scan" />
+Here we can see that a webserver is running on port 80, so we will browse to the website. An image of a man with the title “Employee of the month” is displayed. Looking at the source of the page we can see that the image file is called “BillHarper.png”, so the employee of the month is Bill Harper.
+<img src="/uploads/posts/steelmountain/website.png" alt="website" />
+<h1 id="initial-access">Initial Access</h1>
+<p>Looking back at the nmap scan results we see that another webserver is running. Browing to this service reveals a file server, under “Server Information” we can see that this is a HttpFileServer on version 2.3. When we click on the text we are redirected to “www.rejetto.com”. 
+<img src="/uploads/posts/steelmountain/fileserver.png" alt="fileserver" />
+Using this information we can search if there is an exploit available, we will use metasploit to search and use an exploit. Here we find “exploit/windows/http/rejetto_hfs_exec”, doing some additional research we can see that the CVE number is “2014-6287”. We will set our options and run the exploit.
+<img src="/uploads/posts/steelmountain/exploit.png" alt="exploit" />
+We now have a meterpreter shell, we can now browse to the Desktop directory of the current user and we will find the “user.txt” file containing the flag.
+<h1 id="privilege-escaltion">Privilege Escaltion</h1>
+<p>Now we need to gain root privileges, a powershell script called “PowerUp.ps1” is provided to us. Once downloaded on our attacking machine we can upload this script to the target. Once we execute it the service “AdvancedSystemCareService9” is shown to have a misconfiguration that allows us to write to the directory and restart the service. We can leverage this to put our own executable in the place of the service executable and restart the service.
+<img src="/uploads/posts/steelmountain/powerup.png" alt="powerup" />
+With msfvenom we will generate a tcp reverse shell with the name of the service. Then we will upload the file into the directory of the service to replace the original executable with our reverse shell. We will now start a netcat listener by executing <code class="language-plaintext highlighter-rouge">nc -lnvp 4443</code> and then restart the service.
+Now we get a response on our netcat listener with a windows cmd line.
+<img src="/uploads/posts/steelmountain/reverseshell.png" alt="reverseshell" />
+This is where we find the “root.txt” file containing the last flag. (The last task will be left out as a challenge for you ;) )
        <div class="readmore">
-          <a href="/posts/2025-03-11-steelmountain" role="button">Read more</a>
+          <a href="/posts/steelmountain" role="button">Read more</a>
        <div>
 </article>
 <nav class="pagination" role="navigation">
