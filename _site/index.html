@@ -64,6 +64,93 @@
 </header>
 <article class="blog">
 <style>
+  .billing {
+    margin-bottom: 2em;
+  }
+  .billing::before {
+    background-image: url('/uploads/posts/billing/hero.png');
+    background-size: cover;
+    background-position: center center;
+    -webkit-filter: grayscale(0.5) brightness(0.5) contrast(0.5);
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  .billing::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.2);
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    z-index: -1;
+  }
+  .billing-container,
+  .billing-container::before,
+  .billing-container::after {
+    height: 25rem;
+  }
+  .billing-bleed-container,
+  .billing-bleed-container::before,
+  .billing-bleed-container::after {
+    height: 35rem;
+  }
+    @media (max-width: 48rem) {
+        .billing-container,
+        .billing-container::before,
+        .billing-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+ <div class="
+    post-title-container
+        billing billing-container hero-hov
+  ">
+   <div class="heading-container hero-heading hero-heading-blog">
+     <h1>
+          <a href="/posts/billing" title="THM: Billing Writeup">THM: Billing Writeup</a>
+     </h1>
+     <div class="
+        post-meta
+      ">
+        <span>19/03/2025</span>
+        <span>
+              <a href="/tag/ctf">#ctf</a>
+              <a href="/tag/writeup">#writeup</a>
+              <a href="/tag/tryhackme">#tryhackme</a>
+        </span>
+     </div>
+   </div>
+ </div>
+     <p class="lead">In this <a href="https://tryhackme.com/room/billing">TryHackMe</a> writeup we will use metasploit to execute code on a Linux machine and then escelate our privileges to gain root access.
+<h1 id="reconaissance">Reconaissance</h1>
+<p>First I did an nmap scan of the server and discovered 4 open ports. One of these ports is an Apache webserver with the title “MagnusBilling”.
+<img src="/uploads/posts/billing/nmap.png" alt="nmap-scan" />
+<p>Upon opening the website we are greeted with a login page, so I decided to dig through the javascript to see if I could find a version number. Then I stumbled upon a comment from 2023, so I looked up “MagnusBilling 2023 exploit and the first result was an unauthenticated remote code execution (RCE) vulnerability from <a href="https://www.rapid7.com/db/modules/exploit/linux/http/magnusbilling_unauth_rce_cve_2023_30258/">Rapid7</a>. 
+<img src="/uploads/posts/billing/login.png" alt="login-page" />
+<h1 id="exploitation">Exploitation</h1>
+<p>So I decided to open up metasploit and run the exploit. After setting the options I gained a shell!
+<img src="/uploads/posts/billing/metasploit.png" alt="metasploit" />
+<p>So I checked out the home directory and found the user “Magnus”, in this directory I found the first flag under “user.txt”. Now all that’s left is gaining root access.
+<h1 id="post-exploitation">Post Exploitation</h1>
+<p>First I checked out all SUID binaries with <code class="language-plaintext highlighter-rouge">find / -perm -4000 2&gt;/dev/null</code>, but I did not find any vulnerable binaries. So I checked out what I can do with sudo using <code class="language-plaintext highlighter-rouge">sudo -l</code> here I got the following output: <code class="language-plaintext highlighter-rouge">(ALL) NOPASSWD: /usr/bin/fail2ban-client</code>. I searched for a way to execute commands using this binary and found I can define actions when an IP should be banned. So I decided to define a new evil action that sets the setuid bit on /bin/bash to then gain a root shell.
+<img src="/uploads/posts/billing/privesc.png" alt="privesc" />
+       <div class="readmore">
+          <a href="/posts/billing" role="button">Read more</a>
+       <div>
+</article>
+ <hr>
+<article class="blog">
+<style>
   .steelmountain {
     margin-bottom: 2em;
   }
