@@ -1,0 +1,4 @@
+---
+slug: skövde
+name: Skövde
+---
