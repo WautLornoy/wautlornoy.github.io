@@ -2,7 +2,7 @@
 layout: post
 title: "International Project Skövde: Day 1"
 description: >
-  This blog post recounts our group's journey to Skövde, Sweden, for an international project. It highlights Thomas and Jeff's adventures in Gothenburg, where they explored the city and embraced Swedish culture, alongside Waut, Victor, Gianni, and Jurre's road trip from Bruges. The narrative captures the memorable moments and challenges of our travels, culminating in our arrival in Skövde, ready for the project ahead.
+  This blog post captures the excitement of the first day of our international project in Skövde, Sweden. We kicked off the week with a briefing on the Capture the Flag (CTF) challenge, met our teachers, and learned about various after-school activities. After diving into the CTF tasks, we enjoyed a break for food and continued our teamwork until the afternoon. The day concluded with a fun evening at KappaBar, where we played a variety of games and bonded with friends. Join us as we share our experiences throughout this thrilling week!
 tags:
   - international-project
   - skövde
