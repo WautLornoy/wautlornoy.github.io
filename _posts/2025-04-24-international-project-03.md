@@ -2,7 +2,7 @@
 layout: post
 title: "International Project Skövde: Day 3"
 description: >
-
+  In this post, we share the events of the third day of our international project, where we returned to campus to face new challenges. As competition intensified, we lost our first place to another group that solved two high-scoring challenges. While Thomas stayed on campus to work on tasks, I returned to the hotel. The day concluded with an organized museum tour, attended by some group members who captured memorable photos.
 tags:
   - international-project
   - skövde
