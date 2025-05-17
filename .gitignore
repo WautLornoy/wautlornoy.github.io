@@ -1,8 +1,9 @@
 # Generated site
-/_site
+_site
 
 # Local packages
-/.bundle/ruby/
+.bundle/ruby/
+Gemfile.lock
 
 # Temporary files
 .sass-cache/
