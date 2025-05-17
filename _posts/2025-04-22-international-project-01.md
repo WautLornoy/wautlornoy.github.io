@@ -18,7 +18,7 @@ Today, we were expected at the campus by 9:00, where we met our teachers, Nico D
 We also learned about after-school activities, which include visiting a gaming bar, going out to a student bar, and exploring an art museum. After the briefing, we gathered in our groups and found a comfortable spot in the room to begin our work. We chatted briefly with the Swedish students before diving into the CTF challenges, which included a variety of tasks such as IRL puzzles, games, math problems, forensics, reverse engineering, and more.
 ![classroom](/uploads/posts/ip/day1/classroom.jpg)
 
-At noon, we took a short break to grab some food and coffee in the cafeteria before continuing our search for flags. We worked until 4:30 PM, at which point we wrapped up for the day. Our group split up, with Thomas and his friends heading out for burgers, while Victor, Jurre, and I returned to the hotel for dinner.
+At noon, we took a short break to grab some food and coffee in the cafeteria before continuing our search for flags. We worked until 16:30, at which point we wrapped up for the day. Our group split up, with Thomas and his friends heading out for burgers, while Victor, Jurre, and I returned to the hotel for dinner.
 ![group](/uploads/posts/ip/day1/group.png)
 
 In the evening, we had a planned activity at KappaBar, a venue in the center of Skövde where we could enjoy drinks and play games with friends. We had a fantastic time playing a variety of games, including Mario Kart, Mario Party, Call of Duty, Gang Beasts, and more.
