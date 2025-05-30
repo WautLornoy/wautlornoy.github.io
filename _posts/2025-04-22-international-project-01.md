@@ -21,5 +21,5 @@ We also learned about after-school activities, which include visiting a gaming b
 At noon, we took a short break to grab some food and coffee in the cafeteria before continuing our search for flags. We worked until 16:30, at which point we wrapped up for the day. Our group split up, with Thomas and his friends heading out for burgers, while Victor, Jurre, and I returned to the hotel for dinner.
 ![group](/uploads/posts/ip/day1/group.png)
 
-In the evening, we had a planned activity at KappaBar, a venue in the center of Skövde where we could enjoy drinks and play games with friends. We had a fantastic time playing a variety of games, including Mario Kart, Mario Party, Call of Duty, Gang Beasts, and more.
+In the evening, we had a planned activity at Kappa Bar, a venue in the center of Skövde where we could enjoy drinks and play games with friends. We had a fantastic time playing a variety of games, including Mario Kart, Mario Party, Call of Duty, Gang Beasts, and more.
 ![kappa-bar](/uploads/posts/ip/day1/kappa-bar.jpg)
