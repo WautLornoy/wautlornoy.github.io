@@ -18,7 +18,7 @@ Thomas and Jef kicked off their adventure with a late flight, landing in Gothenb
 ![bird-eye-view](/uploads/posts/ip/day0/bird-eye-view.jpg)
 
 # Saturday, April 19th
-After a late start, Thomas and Jef ventured out to explore Gothenburg. They discovered charming shops and indulged in a traditional shrimp sandwich, albeit at a steep price. Their day was filled with walking—33,000 steps, to be exact! They capped it off with a hurried dinner of spaghetti bolognese.
+After a late start, Thomas and Jef ventured out to explore Gothenburg. They discovered charming shops and indulged in a traditional shrimp sandwich, albeit at a steep price. Their day was filled with walking 33,000 steps, to be exact! They capped it off with a hurried dinner of spaghetti bolognese.
 ![gothenburg](/uploads/posts/ip/day0/gothenburg.jpg)
 
 # Sunday, April 20th
