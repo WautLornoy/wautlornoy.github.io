@@ -1,0 +1,12 @@
+import{F as e,I as t,P as n,Y as r,_ as i,g as a,k as o,p as s,y as c}from"../chunks/B4o9O9c5.js";import"../chunks/xihTtKlq.js";import{t as l}from"../chunks/Dn83LPfH.js";import{t as u}from"../chunks/B3Va-Lqd.js";var d=c(`<li class="tag svelte-cwls5q"> </li>`),f=c(`<!> <section class="page-narrow"><div class="rule"></div> <h1 class="page-title about-title svelte-cwls5q">Background</h1> <p class="body-text svelte-cwls5q">Someone in a PlayStation party chat once told me, that they were about to take my
+		internet offline. Then I got hit with a DDoS attack. This sparked my curiosity for cyber security before I even knew what it was.</p> <p class="body-text svelte-cwls5q">I taught myself to program in high school and moved from there to TryHackMe, where I climbed to
+		a top 1% ranking. Afterwards I pursued a Bachelor of Applied Computer Science on the Cyber Security Professional
+		elective track at Howest in Bruges.</p> <p class="body-text svelte-cwls5q">In 2025 I got into Hack the Government 2025, Belgium's private, invite-only bug bounty program
+		for government systems, and found two vulnerabilities there: a cross-site scripting issue and a
+		remote code execution issue. Intigriti rated one of them exceptional severity and the other
+		medium. I picked hacking back up more seriously on HackTheBox in July 2026, and that is where
+		most of my practice happens now.</p> <p class="body-text svelte-cwls5q">This blog is where I write about whatever I'm working on. Sometimes that's a CTF challenge.
+		Sometimes it's a new tool or technique I'm picking up. There's no fixed beat, just what has my
+		attention at the time.</p> <p class="body-text about-last svelte-cwls5q">I write things down because that is how I actually learn them. Explaining something to a
+		reader forces me to explain it to myself first, and that is usually where I notice what I got
+		wrong or missed the first time round.</p> <h2 class="eyebrow-accent">Focus areas</h2> <ul class="tags svelte-cwls5q"></ul></section>`,1);function p(c){var p=f(),m=e(p);u(m,{title:`About`,description:`How I got into offensive security, what I've found along the way, and how I write about it here.`,path:`/about`});var h=t(m,2),g=t(n(h),16);s(g,20,()=>l,e=>e,(e,t)=>{var s=d(),c=n(s,!0);r(s),o(()=>a(c,t)),i(e,s)}),r(g),r(h),i(c,p)}export{p as component};

@@ -1,0 +1,1 @@
+var e={slug:`template`,draft:!0},t=[],n=``;export{t as headings,n as html,e as metadata};

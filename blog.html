@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="preload"
+			href="/fonts/inter-latin.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			href="/fonts/space-grotesk-latin.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+
+		<meta name="theme-color" content="#eef0eb" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#1d201f" media="(prefers-color-scheme: dark)" />
+
+		<script>
+			(function () {
+				try {
+					var stored = localStorage.getItem('theme');
+					var theme =
+						stored === 'light' || stored === 'dark'
+							? stored
+							: window.matchMedia('(prefers-color-scheme: dark)').matches
+								? 'dark'
+								: 'light';
+					document.documentElement.setAttribute('data-theme', theme);
+				} catch (e) {
+					document.documentElement.setAttribute('data-theme', 'light');
+				}
+			})();
+		</script>
+		<link href="./_app/immutable/entry/start.BN0LmPBB.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/AuEZd5mT.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/B4o9O9c5.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Dt-HX3Vu.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.CuRSc4Xv.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/HclGiUj8.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.BdakCYf9.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C-FtMGL5.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Dn83LPfH.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/4.CaJHQPgb.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DmRXDmII.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BkwUSXyW.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/B3Va-Lqd.js" rel="modulepreload">
+		<!--12qhfyh--><link rel="icon" href="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='107'%20height='128'%20viewBox='0%200%20107%20128'%3e%3ctitle%3esvelte-logo%3c/title%3e%3cpath%20d='M94.157%2022.819c-10.4-14.885-30.94-19.297-45.792-9.835L22.282%2029.608A29.92%2029.92%200%200%200%208.764%2049.65a31.5%2031.5%200%200%200%203.108%2020.231%2030%2030%200%200%200-4.477%2011.183%2031.9%2031.9%200%200%200%205.448%2024.116c10.402%2014.887%2030.942%2019.297%2045.791%209.835l26.083-16.624A29.92%2029.92%200%200%200%2098.235%2078.35a31.53%2031.53%200%200%200-3.105-20.232%2030%2030%200%200%200%204.474-11.182%2031.88%2031.88%200%200%200-5.447-24.116'%20style='fill:%23ff3e00'/%3e%3cpath%20d='M45.817%20106.582a20.72%2020.72%200%200%201-22.237-8.243%2019.17%2019.17%200%200%201-3.277-14.503%2018%2018%200%200%201%20.624-2.435l.49-1.498%201.337.981a33.6%2033.6%200%200%200%2010.203%205.098l.97.294-.09.968a5.85%205.85%200%200%200%201.052%203.878%206.24%206.24%200%200%200%206.695%202.485%205.8%205.8%200%200%200%201.603-.704L69.27%2076.28a5.43%205.43%200%200%200%202.45-3.631%205.8%205.8%200%200%200-.987-4.371%206.24%206.24%200%200%200-6.698-2.487%205.7%205.7%200%200%200-1.6.704l-9.953%206.345a19%2019%200%200%201-5.296%202.326%2020.72%2020.72%200%200%201-22.237-8.243%2019.17%2019.17%200%200%201-3.277-14.502%2017.99%2017.99%200%200%201%208.13-12.052l26.081-16.623a19%2019%200%200%201%205.3-2.329%2020.72%2020.72%200%200%201%2022.237%208.243%2019.17%2019.17%200%200%201%203.277%2014.503%2018%2018%200%200%201-.624%202.435l-.49%201.498-1.337-.98a33.6%2033.6%200%200%200-10.203-5.1l-.97-.294.09-.968a5.86%205.86%200%200%200-1.052-3.878%206.24%206.24%200%200%200-6.696-2.485%205.8%205.8%200%200%200-1.602.704L37.73%2051.72a5.42%205.42%200%200%200-2.449%203.63%205.79%205.79%200%200%200%20.986%204.372%206.24%206.24%200%200%200%206.698%202.486%205.8%205.8%200%200%200%201.602-.704l9.952-6.342a19%2019%200%200%201%205.295-2.328%2020.72%2020.72%200%200%201%2022.237%208.242%2019.17%2019.17%200%200%201%203.277%2014.503%2018%2018%200%200%201-8.13%2012.053l-26.081%2016.622a19%2019%200%200%201-5.3%202.328'%20style='fill:%23fff'/%3e%3c/svg%3e"/> <link rel="alternate" type="application/rss+xml" title="Waut Lornoy / posts" href="/rss.xml"/><!----><!--gsrl61--><meta name="description" content="CTF posts and shorter research notes, posted as I finish them, newest first."/> <link rel="canonical" href="https://waut.lornoy.org/blog"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="Waut Lornoy"/> <meta property="og:title" content="Blog / Waut Lornoy"/> <meta property="og:description" content="CTF posts and shorter research notes, posted as I finish them, newest first."/> <meta property="og:url" content="https://waut.lornoy.org/blog"/> <!--[-1--><!--]--> <!--[-1--><!--]--> <meta name="twitter:card" content="summary"/> <meta name="twitter:title" content="Blog / Waut Lornoy"/> <meta name="twitter:description" content="CTF posts and shorter research notes, posted as I finish them, newest first."/> <!--[-1--><!--]--> <!--[-1--><!--]--><!----><title>Blog / Waut Lornoy</title>
+		<link href="./_app/immutable/assets/0.7IRTXZ9a.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/CoverImage.Dl-XLi7i.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/PostCard.CFBAgP_I.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/4.B-Sz5VkV.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><div class="page svelte-12qhfyh"><div class="lines svelte-1lpc64a" aria-hidden="true"></div><!----> <div class="nav-sticky svelte-1h32yp1"><nav class="nav-wrap svelte-1h32yp1" aria-label="Main"><a href="/" class="nav-logo svelte-1h32yp1">WAUT LORNOY</a> <div class="nav-outer svelte-1h32yp1"><div class="nav-links svelte-1h32yp1"><!--[--><a href="/" class="svelte-1h32yp1">Home</a><a href="/about" class="svelte-1h32yp1">About</a><a href="/blog" aria-current="page" class="svelte-1h32yp1 active">Blog</a><!--]--></div> <button type="button" class="theme-toggle svelte-1h32yp1" aria-label="Switch to dark theme" title="Switch theme. Your choice is remembered in this browser."><span class="knob svelte-1h32yp1"></span></button> <button type="button" class="nav-hamburger svelte-1h32yp1" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav"><span class="svelte-1h32yp1"></span> <span class="svelte-1h32yp1"></span> <span class="svelte-1h32yp1"></span></button></div></nav> <!--[-1--><!--]--></div><!----> <main class="svelte-12qhfyh"><!--[--><!----> <section class="page-wide"><div class="rule"></div> <h1 class="page-title">Posts and notes</h1> <p class="page-lead">CTF posts and shorter research notes, posted as I finish them and ordered newest first. The
+		tags below cut the list down to a single topic.</p> <!--[0--><nav class="tag-bar svelte-u4k2t" aria-label="Filter by tag"><!--[--><a class="tag svelte-u4k2t" href="/blog/tag/ctf">ctf<span aria-hidden="true" class="svelte-u4k2t">1</span> <span class="sr-only svelte-u4k2t">1 posts</span></a><a class="tag svelte-u4k2t" href="/blog/tag/cyber-apocalypse-2026">cyber-apocalypse-2026<span aria-hidden="true" class="svelte-u4k2t">1</span> <span class="sr-only svelte-u4k2t">1 posts</span></a><a class="tag svelte-u4k2t" href="/blog/tag/radio">radio<span aria-hidden="true" class="svelte-u4k2t">1</span> <span class="sr-only svelte-u4k2t">1 posts</span></a><a class="tag svelte-u4k2t" href="/blog/tag/rtl-sdr">rtl-sdr<span aria-hidden="true" class="svelte-u4k2t">1</span> <span class="sr-only svelte-u4k2t">1 posts</span></a><a class="tag svelte-u4k2t" href="/blog/tag/web-exploitation">web-exploitation<span aria-hidden="true" class="svelte-u4k2t">1</span> <span class="sr-only svelte-u4k2t">1 posts</span></a><!--]--></nav><!--]--> <!--[0--><div class="card-grid"><!--[--><a class="card svelte-podw4w" href="/blog/sdr-hacking-1"><div class="cover thumb svelte-1e6go98"><!--[0--><img src="/images/posts/sdr-hacking-1/spectrum-FSK.png" alt="" loading="lazy" fetchpriority="auto" decoding="async" class="svelte-1e6go98"/><!--]--></div><!----> <div class="body svelte-podw4w"><div class="meta svelte-podw4w">Notes / Aug 2026 <!--[-1--><!--]--></div> <!----><h2 class="title svelte-podw4w">RF Hacking: The Basics<!----></h2><!----> <div class="summary svelte-podw4w">A Raspberry Pi's GPIO pin becomes a legal 434.4 MHz transmitter with rpitx. An RTL-SDR and Universal Radio Hacker close the loop on the receiving end. ASK, FSK, and PSK each get built, sent over the air, and decoded, PSK coming back bit-inverted, an ambiguity baked into BPSK itself.</div> <div class="cta svelte-podw4w">Read the post</div></div></a><a class="card svelte-podw4w" href="/blog/htb-archonyx-writeup"><div class="cover thumb svelte-1e6go98"><!--[0--><img src="/images/posts/htb-archonyx-writeup/cover.jpg" alt="" loading="lazy" fetchpriority="auto" decoding="async" class="svelte-1e6go98"/><!--]--></div><!----> <div class="body svelte-podw4w"><div class="meta svelte-podw4w">writeups / Aug 2026 <!--[-1--><!--]--></div> <!----><h2 class="title svelte-podw4w">Archonyx: A CSS Side Channel to Root<!----></h2><!----> <div class="summary svelte-podw4w">A writeup for Archonyx, a source-available web challenge from Cyber Apocalypse CTF 2026. A CSS-only side channel leaks a bot's session key past a strict CSP, a symlink race in a zip extractor exposes the app's JWT secret, and a mismatch between two zip parsers plants code that Less loads and runs as root.</div> <div class="cta svelte-podw4w">Read the post</div></div></a><!--]--></div><!--]--></section><!--]--><!----></main> <footer class="svelte-jz8lnl"><div class="footer-grid svelte-jz8lnl"><div><div class="brand svelte-jz8lnl">WAUT LORNOY</div> <div class="tagline svelte-jz8lnl">Sharing my journey and knowledge on cyber security</div></div> <nav class="col" aria-label="Footer"><div class="col-title svelte-jz8lnl">Sitemap</div> <div class="col-links svelte-jz8lnl"><a href="/" class="svelte-jz8lnl">Home</a> <a href="/about" class="svelte-jz8lnl">About</a> <a href="/blog" class="svelte-jz8lnl">Blog</a> <a href="/rss.xml" class="svelte-jz8lnl">RSS feed</a></div></nav> <div class="col"><div class="col-title svelte-jz8lnl">Contact</div> <div class="col-links svelte-jz8lnl"><a href="mailto:waut.lornoy@proton.me" class="svelte-jz8lnl">waut.lornoy@proton.me</a> <a href="https://linkedin.com/in/waut-l" target="_blank" rel="noreferrer" class="svelte-jz8lnl">linkedin.com/in/waut-l</a> <a href="/8cb657e2233e0eac6c89678f31ec8bd987617d5a.asc" class="pgp-key svelte-jz8lnl" download="">PGP: 8CB6 57E2 233E 0EAC 6C89 678F 31EC 8BD9 8761 7D5A</a></div></div></div> <div class="footer-bottom svelte-jz8lnl"><div>Copyright 2026
+			Waut Lornoy.</div> <a href="/privacy" class="svelte-jz8lnl">Privacy policy</a></div></footer><!----></div><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_lbueop = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BN0LmPBB.js"),
+						import("./_app/immutable/entry/app.CuRSc4Xv.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+
+		<script>
+			(function () {
+				var el = document.getElementById('hero-title');
+				if (!el) return;
+				try {
+					var titles = JSON.parse(el.getAttribute('data-titles') || '[]');
+					if (titles.length) {
+						el.textContent = titles[Math.floor(Math.random() * titles.length)];
+						el.dataset.picked = 'true';
+					}
+				} catch (e) {
+					// Malformed data-titles leaves the prerendered default in place.
+				}
+			})();
+		</script>
+	</body>
+<!-- 
+You found a tick, good job!
+
+    \ /
+     V
+\___XXX___/
+ __XXXXX__
+/__XXXXX__\
+/   XXX   \
+   /   \
+	
+-->
+</html>
